@@ -14,3 +14,4 @@ export const sections: Section [] = [
   { name: 'Videos', cover: `${images}/video.png` },
   { name: 'Home and decoration', cover: `${images}/home.png` },
 ];
+

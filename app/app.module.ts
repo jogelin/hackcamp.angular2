@@ -1,15 +1,30 @@
-import { AppService } from './app.service';
-import { SectionComponent } from './bs-section.component';
-import { MenuBarComponent } from './bs-menubar.component';
-import { HeaderComponent } from './bs-header.component';
+import { GalleryItemComponent } from './components/gallery-item/gallery-item.component';
+import { BookComponent } from './components/book/book.component';
+import { GalleryComponent } from './components/gallery/gallery.component';
+import { MenubarCategoryComponent } from './components/menubar-category/menubar-category.component';
+import { BookStoreComponent } from './components/bookstore/bookstore.component';
 import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { DashboardComponent }  from './bs-dashboard.component';
+import { DashboardComponent }  from './components/dashboard/dashboard.component';
+import { HeaderComponent } from './components/header/header.component';
+import { MenubarComponent } from './components/menubar/menubar.component';
+import { SectionComponent } from './components/section/section.component';
+
+
 
 @NgModule({
   imports: [ BrowserModule ],
-  declarations: [ DashboardComponent, HeaderComponent, MenuBarComponent, SectionComponent ],
-  bootstrap: [ DashboardComponent ],
-  providers: [AppService]
+  declarations: [
+    DashboardComponent,
+    HeaderComponent,
+    MenubarComponent,
+    SectionComponent,
+    BookStoreComponent,
+    MenubarCategoryComponent,
+    GalleryComponent,
+    BookComponent,
+    GalleryItemComponent
+  ],
+  bootstrap: [ BookStoreComponent ]
 })
 export class AppModule { }

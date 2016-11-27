@@ -1,0 +1,13 @@
+<!--Header component-->
+<bs-header [appTitle]="title"></bs-header>
+
+
+<main class="main-content">
+    <!--Menu filters-->
+    <bs-menubar></bs-menubar>
+
+    <!--List of sections-->
+    <bs-gallery [items]="sections">
+        <bs-section [section]="item"></bs-section>
+    </bs-gallery>
+</main>

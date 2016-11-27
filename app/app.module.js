@@ -1,4 +1,4 @@
-System.register(['./app.service', './bs-section.component', './bs-menubar.component', './bs-header.component', '@angular/core', '@angular/platform-browser', './bs-dashboard.component'], function(exports_1, context_1) {
+System.register(['./components/gallery-item/gallery-item.component', './components/book/book.component', './components/gallery/gallery.component', './components/menubar-category/menubar-category.component', './components/bookstore/bookstore.component', '@angular/core', '@angular/platform-browser', './components/dashboard/dashboard.component', './components/header/header.component', './components/menubar/menubar.component', './components/section/section.component'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,21 +10,24 @@ System.register(['./app.service', './bs-section.component', './bs-menubar.compon
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var app_service_1, bs_section_component_1, bs_menubar_component_1, bs_header_component_1, core_1, platform_browser_1, bs_dashboard_component_1;
+    var gallery_item_component_1, book_component_1, gallery_component_1, menubar_category_component_1, bookstore_component_1, core_1, platform_browser_1, dashboard_component_1, header_component_1, menubar_component_1, section_component_1;
     var AppModule;
     return {
         setters:[
-            function (app_service_1_1) {
-                app_service_1 = app_service_1_1;
+            function (gallery_item_component_1_1) {
+                gallery_item_component_1 = gallery_item_component_1_1;
             },
-            function (bs_section_component_1_1) {
-                bs_section_component_1 = bs_section_component_1_1;
+            function (book_component_1_1) {
+                book_component_1 = book_component_1_1;
             },
-            function (bs_menubar_component_1_1) {
-                bs_menubar_component_1 = bs_menubar_component_1_1;
+            function (gallery_component_1_1) {
+                gallery_component_1 = gallery_component_1_1;
             },
-            function (bs_header_component_1_1) {
-                bs_header_component_1 = bs_header_component_1_1;
+            function (menubar_category_component_1_1) {
+                menubar_category_component_1 = menubar_category_component_1_1;
+            },
+            function (bookstore_component_1_1) {
+                bookstore_component_1 = bookstore_component_1_1;
             },
             function (core_1_1) {
                 core_1 = core_1_1;
@@ -32,8 +35,17 @@ System.register(['./app.service', './bs-section.component', './bs-menubar.compon
             function (platform_browser_1_1) {
                 platform_browser_1 = platform_browser_1_1;
             },
-            function (bs_dashboard_component_1_1) {
-                bs_dashboard_component_1 = bs_dashboard_component_1_1;
+            function (dashboard_component_1_1) {
+                dashboard_component_1 = dashboard_component_1_1;
+            },
+            function (header_component_1_1) {
+                header_component_1 = header_component_1_1;
+            },
+            function (menubar_component_1_1) {
+                menubar_component_1 = menubar_component_1_1;
+            },
+            function (section_component_1_1) {
+                section_component_1 = section_component_1_1;
             }],
         execute: function() {
             AppModule = (function () {
@@ -42,9 +54,18 @@ System.register(['./app.service', './bs-section.component', './bs-menubar.compon
                 AppModule = __decorate([
                     core_1.NgModule({
                         imports: [platform_browser_1.BrowserModule],
-                        declarations: [bs_dashboard_component_1.DashboardComponent, bs_header_component_1.HeaderComponent, bs_menubar_component_1.MenuBarComponent, bs_section_component_1.SectionComponent],
-                        bootstrap: [bs_dashboard_component_1.DashboardComponent],
-                        providers: [app_service_1.AppService]
+                        declarations: [
+                            dashboard_component_1.DashboardComponent,
+                            header_component_1.HeaderComponent,
+                            menubar_component_1.MenubarComponent,
+                            section_component_1.SectionComponent,
+                            bookstore_component_1.BookStoreComponent,
+                            menubar_category_component_1.MenubarCategoryComponent,
+                            gallery_component_1.GalleryComponent,
+                            book_component_1.BookComponent,
+                            gallery_item_component_1.GalleryItemComponent
+                        ],
+                        bootstrap: [bookstore_component_1.BookStoreComponent]
                     }), 
                     __metadata('design:paramtypes', [])
                 ], AppModule);
