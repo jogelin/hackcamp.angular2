@@ -1,0 +1,8 @@
+<ul>
+    <li class="placeholder">
+        <a data-type="all" href="#0">All</a>
+    </li>
+    <li *ngFor="let category of categories">
+        <a [class.selected]="category.selected" [routerLink]="category.name">{{ category.name }}</a>
+    </li>
+</ul>

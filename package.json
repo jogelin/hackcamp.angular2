@@ -4,6 +4,7 @@
   "scripts": {
     "prestart": "npm install && typings install",
     "start": "npm-run-all --parallel tsc:w lite",
+    "clear": "rm app/*.js && rm app/*.map && rm app/**/*.js && rm app/**/*.map && rm app/**/**/*.js && rm app/**/**/*.map",
     "lite": "lite-server",
     "tsc": "tsc",
     "tsc:w": "tsc -w",

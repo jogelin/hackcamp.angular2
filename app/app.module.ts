@@ -1,30 +1,18 @@
-import { GalleryItemComponent } from './components/gallery-item/gallery-item.component';
-import { BookComponent } from './components/book/book.component';
-import { GalleryComponent } from './components/gallery/gallery.component';
-import { MenubarCategoryComponent } from './components/menubar-category/menubar-category.component';
-import { BookStoreComponent } from './components/bookstore/bookstore.component';
-import { NgModule }      from '@angular/core';
+import { BookstoreModule } from './modules/bookstore/bookstore.module';
+import { SharedModule } from './modules/shared/shared.module';
+import { DashboardModule } from './modules/dashboard/dashboard.module';
+import { RoutesModule } from './routing.module';
+import { ShellComponent } from './shell.component';
+import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { DashboardComponent }  from './components/dashboard/dashboard.component';
-import { HeaderComponent } from './components/header/header.component';
-import { MenubarComponent } from './components/menubar/menubar.component';
-import { SectionComponent } from './components/section/section.component';
-
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
-  imports: [ BrowserModule ],
+  imports: [BrowserModule, RoutesModule, SharedModule, DashboardModule, BookstoreModule],
   declarations: [
-    DashboardComponent,
-    HeaderComponent,
-    MenubarComponent,
-    SectionComponent,
-    BookStoreComponent,
-    MenubarCategoryComponent,
-    GalleryComponent,
-    BookComponent,
-    GalleryItemComponent
+    ShellComponent
   ],
-  bootstrap: [ BookStoreComponent ]
+  bootstrap: [ShellComponent]
 })
 export class AppModule { }

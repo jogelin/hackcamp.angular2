@@ -1,0 +1,10 @@
+<!--Menu filters-->
+<bs-menubar>
+    <bs-category [dataSource]="categories"></bs-category>
+</bs-menubar>
+
+<!--Book Component-->
+<router-outlet></router-outlet>
+
+<!--Sidebar navigation-->
+<bs-sidebar (sidebarHasBeenToggled)="toggleSidebar($event)" (searchTermChanged)="search($event)"></bs-sidebar>
