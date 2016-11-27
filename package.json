@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "prestart": "npm install",
-    "start": "tsc && npm-run-all --parallel  watch lite",
+    "start": "npm-run-all --parallel  watch lite",
     "lite": "lite-server",
     "postinstall": "typings install",
     "tsc": "tsc",
